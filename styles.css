@@ -1,0 +1,59 @@
+@import url('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Righteous', cursive;
+}
+
+:root
+{
+    --bg-color: black;
+    --second-bg-color:#323946;
+    --text-color:white;
+    --main-color:skyblue;
+}
+
+html
+{
+    font-size: 62.5%;
+    overflow-x:hiden;
+}
+
+body
+{
+    background: var(--bg-color);
+    color:var(--text-color);
+}
+
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index:100;
+}
+
+.pageTag
+{
+    font-size:2.5rem;
+    color:var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+.navigation a
+{
+ font-size: 1.7rem;
+ color: var(--text-color);
+ margin-left:4rem;
+}
