@@ -1,27 +1,49 @@
 <!-- https://www.youtube.com/watch?v=Tkp3FDgOueM -->
+<!-- https://boxicons.com/ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfilio</title>
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel = "stylesheet" href="styles.css">
 </head>
 
 <body>
    <header class="header">
     <a href="#" class="pageTag"> Portfilio</a>
+    <box-icon name='menu' id="MenuIcon"></box-icon>
     <nav class="navigation">
-    <a href="Home">Home</a>
+    <a href="Home" class ="active">Home</a>
     <a href="AboutMe">About Me</a>
     <a href="Services">Services</a>
     <a href="Portfolio">Portfolio</a>
     <a href="Contact">Contact Me</a>
     </nav>
-    
    </header>
-    
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello it's Me</h3>
+            <h1>Carl Hartry</h1>
+            <h3>And I'm a<span>Barber</span></h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore repellat veniam iste.
+                Odit maiores dolore illum pariatur corrupti maxime vel atque libero consectetur, 
+                iure aliquid, autem rem veritatis praesentium.
+            </p>
+            <div class="social-media">
+                <a herf id="#"><box-icon type='logo' name='facebook-square'></box-icon></a>
+                <a herf id="#"><box-icon type='logo' name='linkedin-square'></box-icon></a>
+                <a herf id="#"><box-icon name='twitter' type='logo' ></box-icon></a>
+                <a herf id="#"><box-icon type='logo' name='instagram'></box-icon></a>
+            </div>
+            <a herf="#" class="btn"> Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="" alt="">
+        </div>
+    </section>
 </body>
 
 <footer>
