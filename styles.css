@@ -1,4 +1,4 @@
-@import url('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">');
+@import url('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">');
 
 *{
     margin:0;
@@ -7,13 +7,13 @@
     text-decoration: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Righteous', cursive;
+    font-family: 'Caprasimo', cursive;
 }
 
 :root
 {
-    --bg-color: black;
-    --second-bg-color:#323946;
+    --bg-color: #00111a;
+    --second-bg-color:#00131a;
     --text-color:white;
     --main-color:skyblue;
 }
@@ -21,7 +21,7 @@
 html
 {
     font-size: 62.5%;
-    overflow-x:hiden;
+    overflow-x:hidden;
 }
 
 body
@@ -71,4 +71,49 @@ body
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
+}
+
+#myimage
+{
+    height: 650x;
+    width: 550px;
+    margin: 20px;
+    filter: drop-shadow(2px 1.5rem 4.5rem var(--main-color));
+}
+
+section
+{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.home
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3
+{
+font-size: 3.2rem;
+font-weight: 700;
+}
+
+.home-content h1
+{
+font-size: 5.6rem;
+font-weight: 700;
+line-height: 1.5;
+}
+
+.home-content p
+{
+font-size: 1.6rem;
+
+}
+
+.home-img
+{
+    width: 50vh;
 }
