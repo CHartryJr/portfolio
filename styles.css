@@ -99,6 +99,16 @@ section
 font-size: 3.2rem;
 font-weight: 700;
 }
+.home-content h3:nth-of-type(2)
+{
+margin-bottom: 2rem;
+
+}
+
+.home-content span
+{
+    color: var(--main-color);
+}
 
 .home-content h1
 {
@@ -116,4 +126,47 @@ font-size: 1.6rem;
 .home-img
 {
     width: 50vh;
+}
+
+.social-media a
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover
+{
+ background-color: var(--main-color);
+ color: var(--second-bg-color);
+ box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn
+{
+ display: inline-block;
+padding: 1rem 2.8rem;
+background: var(--main-color);
+border-radius: 4rem;
+box-shadow: 0 0 1rem var(--main-color);
+font-size: 1.6 rem;
+color: var(--second-bg-color);
+transition: .5s ease;
+letter-spacing: .1rem;
+font-weight: 600;
+}
+
+.btn:hover
+{
+    background-color: var(--second-bg-color);
+    color: var(--main-color); 
 }
