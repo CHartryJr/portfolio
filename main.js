@@ -1,3 +1,13 @@
+// active menu button for smaller screens
+let menuIcon = document.querySelector('#MenuIcon');
+let navbar = document.querySelector('.navigation');
+menuIcon.onclick = () =>
+{
+    menuIcon.classList.toggle('bx-grid-vertical');
+    navbar.classList.toggle('active');
+};
+
+// active links highlight and sticky taskbar
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
 
@@ -20,4 +30,12 @@ window.onscroll = () =>
             });
         };
     });
+
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky',window.scrollY > 100);
+
+
+    // afterclick remove toggle
+    menuIcon.classList.remove('bx-grid-vertical');
+    navbar.classList.remove('active');
 };
