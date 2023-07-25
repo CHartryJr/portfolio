@@ -84,8 +84,25 @@ body
     max-height: 40vw;
     margin: 20px;
     filter: drop-shadow(2px .5rem 3.5rem var(--main-color)) ;
+    animation: floatImage 4s ease-in-out infinite;   
+}
+@keyframes floatImage
+{
+    0%
+    {
+        transform: translateY(0);
+    } 
 
+    50%
+    {
+        transform: translateY(-2.8rem);
+    }
     
+    100%
+    {
+        transform: translateY(0);
+    }
+
 }
 
 section
@@ -470,15 +487,29 @@ margin-bottom: 5rem;
         padding:  2rem 3%;
     }
 
+    .services
+    {
+        padding-bottom: 7rem;
+    } 
+
     section
     {
         padding: 10rem 3% 2rem;
     } 
 
+    .portfolio
+    {
+        padding-bottom: 7rem;
+    }
+
     .footer
     {
 
         padding:2rem 3%;
+    }
+    .contact
+    {
+        min-height: auto;
     }
 }
 
@@ -538,9 +569,76 @@ margin-bottom: 5rem;
     .home-img
     {
         width: 42vw;
-       
     }
 
-    
+    .about
+    {
+        flex-direction: column-reverse;
+    }
+
+    .about-img img
+    {
+        width:40vw;
+        margin-top: 4rem;
+    }
+
+    .experience h2
+    {
+        margin-bottom: 3rem ;
+    }
+
+    .portfolio h2 
+    {
+    margin-bottom: 3rem;
+    }
+
+    .portfolio-container
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
+@media(max-width: 617px)
+{
+    .portfolio-container
+    {
+        grid-template-columns: 1f;
+    }
+}
+
+@media(max-width: 450px)
+{
+    html
+    {
+        font-size: 50%;
+    }
+
+    .contact form .input-box input
+    {
+        width: 100%;
+    }
+}
+
+@media(max-width: 365px)
+{
+    #myimage
+    {
+        width: 90vw;
+    }
+
+    .about-img img
+    {
+        width:90vw;   
+    }
+
+    .footer
+    {
+      flex-direction: column-reverse;  
+    }
+
+    .footer p 
+    {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}

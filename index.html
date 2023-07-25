@@ -1,6 +1,8 @@
 <!-- Inspired by codehal -->
 <!-- https://www.youtube.com/watch?v=Tkp3FDgOueM -->
 <!-- https://boxicons.com/ -->
+<!-- https://www.youtube.com/watch?v=Yg6POD0M30w -->
+<!-- https://github.com/mattboldt/typed.js -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +11,10 @@
     <title>Personal Portfilio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel = "stylesheet" href="styles.css">
+    <!-- scroll reveal link -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- typedjs link -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 
 <body>
@@ -29,7 +35,7 @@
         <div class="home-content">
             <h3>Hello it's Me</h3>
             <h1>Carl Hartry Jr.</h1>
-            <h3>And I'm an Aspiring <span>Software Developer!</span></h3>
+            <h3>And I'm an Aspiring <span class = 'multi-text'></span></h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore repellat veniam iste.
                 Odit maiores dolore illum pariatur corrupti maxime vel atque libero consectetur, 
@@ -97,6 +103,7 @@
     <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Projects</span></h2>
         <div class="portfolio-container">
+           
             <div class="portfolio-box">
                 <img src="\assests/test1.png" alt="">
                 <div class="portfolio-layer">
@@ -108,6 +115,24 @@
 
             <div class="portfolio-box">
                 <img src="\assests/test2.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, nulla.</p>
+                    <a href="#"><i class='bx bx-link'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="\assests/test5.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, nulla.</p>
+                    <a href="#"><i class='bx bx-link'></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio-box">
+                <img src="\assests/test6.jpeg" alt="">
                 <div class="portfolio-layer">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, nulla.</p>
@@ -137,7 +162,7 @@
     <!-- contact section -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2> 
-        <form action="https://formsubmit.co/8e2c8822ef9cf7f369ca66e2c37389a4" method="post" enctype ="text/plain">
+        <form action="https://formsubmit.co/8e2c8822ef9cf7f369ca66e2c37389a4" method="post" enctype ="text/plain" class =form>
             <div class="input-box">
                 <input type="text" placeholder="Full Name" required>
                 <input type="email" placeholder="Email Address" required>
