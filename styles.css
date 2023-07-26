@@ -105,6 +105,12 @@ body
 
 }
 
+p
+{
+    text-indent: 3rem;
+}
+
+
 section
 {
     min-height: 100vh;
