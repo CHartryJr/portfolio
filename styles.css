@@ -57,6 +57,11 @@ body
     cursor: default;
 }
 
+p
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .navigation a
 {
  font-size: 1.7rem;
@@ -477,10 +482,9 @@ margin-bottom: 5rem;
    color: var(--second-bg-color); 
 }
 
-.aboutme
+.about-content #aboutmeicon
 {
-    align-items : center;
-    background-color: var(--bg-color);
+    animation: floatImage 6s ease-in-out infinite; 
 }
 
 

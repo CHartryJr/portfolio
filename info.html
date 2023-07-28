@@ -6,23 +6,29 @@
         <title>About Me</title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel = "stylesheet" href="styles.css">
-        <link rel="icon" href="\assests/Heartrylogo.jpeg" class="logo">  
+        <link rel="icon" href="\assets/Heartrylogo.jpeg" class="logo">
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body>
         <header class="header">
-            <a href="#" class="pageTag"> Carl <span>Hartry</span>Jr.</a>
-            <img src="\assests/me.png" alt="">
+            <a href="#" class="pageTag"> Carl <span>Hartry Jr.</span></a>
         </header>
         <!-- about Me -->
-        <section class="aboutme" id="aboutme">
+        <section class="aboutme">
                 <div class="about-content">
-                    <h1 class="heading">The<span> Journey <i class='bx bx-book-reader'></i></span></h1>
-                    <p>
-                            Born and raised within a small town in Georgia and gifted with a powerful drive and an inqusive mindset.
-                        Not knowing where these gifts would lead me, I pursused many interests until fate lead me to Computers. 
-                        My first experince was with Game Development and Unfortunaly due to my lack of experince and knowlege, I failed.
-                        Unknowingly, I found this failiure as the spark needed to ingnite the passion I now have for Computer Science.  
-                    </p>
+                    <h1 class="heading">The<span> Journey <i class='bx bx-book-reader' id="aboutmeicon"></i></span></h1>
+                    <div id="content">
+                        <p>
+                            Born and raised within a small town in Georgia and gifted with a powerful drive and an inquisitive mindset.
+                            Not knowing where these gifts would lead me, I pursued many interests until fate lead me to Computers. 
+                            My first experience was with Game Development and unfortunately due to my lack of experience and knowledge, I failed.
+                            Unknowingly, I found this failure as the spark needed to ignite the passion I now have for Computer Science.  
+                        </p>
+                        <P>
+                            Working for 1yr independently on a racing game with no computer experience or a firm understanding of the fundamental 
+                            concepts of any subject involved I have 
+                        </P>
+                     </div>
                 </div>
         </section>
     </body>
@@ -34,7 +40,15 @@
             <a href="\index.html#experience"><i class='bx bx-chevron-up-square'></i></a>
         </div>
     </footer>
+   
+    <script src="main.js"></script>
     <style>
+       .about-content #content p
+        {
+            margin-bottom: -1rem;
+            line-height: 2.5rem;
+        }
+        
         .header
         {
             justify-content: left;
@@ -43,12 +57,6 @@
         .pageTag
         {
             margin-right: 1.5rem;
-        }
-
-        .header img
-        {
-            width:3rem;
-            height:3rem;
         }
 
         footer
@@ -65,5 +73,5 @@
             z-index:100;
         }
     </style>
-    <script src="main.js"></script>
+   
 </html>
