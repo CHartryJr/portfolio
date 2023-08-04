@@ -9,8 +9,11 @@
         <link rel="icon" href="\assets/Heartrylogo.jpeg" class="logo">
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="header">
             <a href="#" class="pageTag"> Carl <span>Hartry Jr.</span></a>
+            <nav class="navi">
+                <a href="\index.html#about" class ="active">Home</a>
+            </nav>
         </header>
         <!-- about Me -->
         <section class="aboutme">
@@ -32,57 +35,104 @@
                             When we first met I talked about my project and the objectives that I wanted to accomplish. He spoke of the wonders of Computer Science and with my drive 
                             I would find the correct path. This inspired me, I Changed my major and the real journey began. From Georgia Military College to Georgia College and State 
                             University I have faced many exciting and tedious challeges gaining unmeasurable amounts of knowledge about preperation,foucusing, and most importantaly computers.
-                            My interests had grown, giving me a whole new world to look forward to. I catch myself diving into topics of Machine Learnig/AI,Full-Stack Development,imbeded software,
-                            and Game Development. 
-                        </P>
+                            My interests had grown, giving me a whole new world to look forward to.
+                        <p> 
+                        My journey to becoming as a CS Major has been both challenging and rewarding.
+                            During my first year as a Computer Science Major, I faced numerous hurdles as I struggled to grasp the fundamental concepts of programming and computer systems.
+                            However, with the support of patient professors and dedicated classmates, I gradually began to build my understanding of coding languages like Python and Java.
+                            As I progressed through the CS program, I participated in various extracurricular activities,and coding clubs to enhance my skills and broaden my horizons. 
+                            I found mentors who guided me through complex topics like data structures, algorithms, and software engineering practices.
+                            In my junior year, I got my first taste of machine learning and data analysis, which captivated me with its potential to solve real-world problems. Despite being intimidated at first,
+                            I dove into online courses and personal projects to explore this exciting domain.
+                            I also dabbled in web development, learning about front-end technologies like HTML, CSS, and JavaScript, and back-end technologies like Node.js and databases. 
+                            In my junior year, I got my first taste of machine learning and data analysis, which captivated me with its potential to solve real-world problems. 
+                            Despite being intimidated at first, I dove into online courses and personal projects to explore this exciting domain.
+                            Throughout this journey, I faced moments of self-doubt, but I persevered, knowing that with hard work and determination, I could overcome any obstacle. Now, as a senior CS Major,
+                            I am amazed at how far I've come, and I am proud of the progress I've made in honing my computer science skills.
+                            Looking ahead, I'm excited to apply my knowledge in the real world, contribute to innovative projects, and continue learning and growing in the dynamic field of computer science. 
+                            I hope to make a positive impact on society through technology and inspire others from small towns like mine to pursue their dreams in the world of computer science.
+                        </p>
                         <P>
-                            Knowing focusing on on all my topics at one time  is not a good prectice I try to make sure learn to relatable topics between subjects and set a scedule for which subject I will would like 
-                            to focus on. A
+                            As a student from a small town in Georgia with little computer experience, my journey to becoming a senior CS Major has been both challenging and rewarding. I have 
+                            gathered some very useful key competencies that I know will be helpful to any business I communication skills, Problem-Solving,Critical Thinking,Adaptability, and Persistence
+                            Initially, I had limited exposure to computers, but my curiosity and fascination with technology drove me to pursue a degree in computer science.
                         </P>
                      </div>
                 </div>
+                <video autoplay loop muted id="video-background">
+                    <source src="\assets/busy.mov" type="video/mp4">
+                </video>
         </section>
+        <script>
+            const header = document.getElementById('header');
+            const content = document.getElementById('content');
+    
+            document.addEventListener('scroll', function (event) 
+            {
+                const scrollY = window.scrollY;
+                const headerBottom = header.getBoundingClientRect().bottom;
+    
+                if (scrollY <= headerBottom + 15) 
+                {
+                    header.classList.remove('hidden');
+                } else 
+                {
+                    header.classList.add('hidden');
+                }
+            });
+        </script>
     </body>
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by Carl Hartry Jr. | All Rights Reserved.</p>
-        </div>
-        <div class="footer-Topicon">
-            <a href="\index.html#experience"><i class='bx bx-chevron-up-square'></i></a>
-        </div>
-    </footer>
-   
-    <script src="main.js"></script>
+
     <style>
+        #video-background 
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width:100vw;
+            height: 100vh;
+            z-index: -1;
+            object-fit: cover;
+            filter: brightness(30%);
+        }
+
+
        .about-content #content p
         {
             margin-bottom: -1rem;
-            line-height: 2.5rem;
+            line-height: 2rem;
+            font-size: 2.1rem;
         }
         
-        .header
+        header
         {
             justify-content: left;
+            transition: opacity 0.5s ease-in-out;
         }
+         
+        header.hidden 
+        {
+            opacity: 0;
+        }
+
+        header nav
+        {
+            position: relative;
+            right: 80px ;
+            font-size: 2.5rem;
+        }
+
+        header nav a
+        {
+            color: skyblue;
+        }
+        
 
         .pageTag
         {
             margin-right: 1.5rem;
         }
 
-        footer
-        {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width:100%;
-            padding: 2rem 9%;
-            background: var(--bg-color);
-            display: flex;
-            justify-content:space-between;
-            align-items: center;
-            z-index:100;
-        }
     </style>
    
 </html>
