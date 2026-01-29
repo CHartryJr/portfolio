@@ -55,7 +55,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right'});
 // span scroling using typed js
  const typed = new Typed('.multi-text',
 {
-    strings:['Software Developer','Machine Learning Expert','Game Developer'],
+    strings:['Computer Scientist','Software Developer','Machine Learning Expert'],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
