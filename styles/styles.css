@@ -522,13 +522,32 @@ span
 
     .footer
     {
-
         padding:2rem 3%;
     }
     .contact
     {
         min-height: auto;
     }
+
+    #myimage
+    {
+        margin-right: 0;
+        padding-right: 0;
+        margin-left: 15rem;
+    }
+
+    .home p
+    {
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+   .home-content
+   {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+   }
+
 }
 
 @media(max-width: 768px)
@@ -602,7 +621,7 @@ span
 
     .home-img
     {
-        margin: 5rem 0  0 0;
+        margin: 5rem 1.5rem 0 0;
         width: 42vw;
     }
 
@@ -640,6 +659,7 @@ span
     {
         grid-template-columns: 1f;
     }
+
 }
 
 @media(max-width: 450px)
@@ -653,6 +673,23 @@ span
     {
         width: 100%;
     }
+     
+    .social-media
+    {
+        margin-left: 15.5rem;
+    }
+    
+    #cntctdlw
+    {
+        margin-left: 17rem;
+    }
+    
+    #myimage
+    {
+        width: 13rem; 
+        margin: 5rem;;
+    }
+
 }
 
 @media(max-width: 365px)
