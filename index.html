@@ -12,7 +12,6 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="icon" href="\assets/Heartrylogo.jpeg" class="logo">
         <link rel = "stylesheet" href="\styles/styles.css">
-        
         <!-- scroll reveal link -->
         <script src="https://unpkg.com/scrollreveal"></script>
         <!-- typedjs link -->
@@ -78,22 +77,21 @@
         <section id="experience" class="experience">
             <h2 class="heading">My <span>Experiences</span></h2>
             <div class="experience-container">
+                
                 <div class="experience-box">
                     <i class='bx bx-layer'></i>
                     <h3>Software Development</h3>
                     <p id="Sd-title">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Molestiae quibusdam magni hic ad odit, esse commodi? Tempore dolor ab modi.
+                        List of experiences pertaining to Software Development.
                     </p>
-                    <a href="#" class="btn">Read More</a>
+                    <a href="\sub_dom/sd.html#cs_detail" class="btn">Read More</a>
                 </div>
 
                 <div class="experience-box">
                     <i class='bx bx-bot'></i>
                     <h3>Machine Learning</h3>
                     <p id="ml-title">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Molestiae quibusdam magni hic ad odit, esse commodi? Tempore dolor ab modi.
+                        List of experiences pertaining to Machine Learning.
                     </p>
                     <a href= "\sub_dom/ml.html#ml_detail" class="btn">Read More</a>
                 </div>
@@ -163,17 +161,22 @@
             <!-- contact section -->
         <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2> 
-            <form action="https://formsubmit.co/8e2c8822ef9cf7f369ca66e2c37389a4" method="post" enctype ="text/plain" class =form>
+            <form action="https://formsubmit.co/d1d10820ce87fc62728ed3ada1cc0cfa " method="POST" class ="form">
+
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email Address" required>
+                    <input type="text" name="name" placeholder="Full Name" required style="margin-left: 17rem;">
                 </div>
+        
                 <div class="input-box">
-                    <input type="number" placeholder="Mobile Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <input type="email" name= "email" placeholder="Email Address" required>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
                 </div>
-                <textarea name = "" id ="" cols="30" rows ="10" placeholder="Leave Your Message Here."></textarea>
-                <input type="submit" value="Send Message" class="btn">
+
+                <textarea name = "message" cols="30" rows ="10" placeholder="Leave Your Message Here."></textarea>
+                <button type="submit"  class="btn"> Send Message </button>
+
             </form>
         </section>
     </body>

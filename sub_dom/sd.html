@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="\styles/styles.css">
+        <link rel="icon" href="\assets/Heartrylogo.jpeg" class="logo">
+        <title>Experince</title>
+    </head>
+
+    <body>
+
+        <header class="header" id="header">
+            <a href="#" class="pageTag"> Carl <span>Hartry Jr.</span></a>
+            <nav class="navi">
+                <a href="\index.html#experience" class ="active">Home</a>
+            </nav>
+        </header>
+
+        <section class = "cs_detail">
+            <h1 class = "heading"><span>Computer Science</span> Experince</h1>
+            <div id="exp-content">
+            <ul id = 'class_content' style="list-style-type: none;">
+                <li><p> <i>CSCI 4710 Databases</i> : An introduction to managing data as a resource by 
+                    examining basic concepts in database management systems and contrasting them 
+                    with standard file systems. Topics include data modeling, relational databases, 
+                    database query languages, relational database design, transaction processing, 
+                    and distributed databases. 
+                </p></li>
+
+                <li><p>
+                    <i>CSCI 4330 Programming Lang & design</i> : The study of programming languages including the concept of 
+                    compiler and interpreter, data types, type checking, names and scopes, 
+                    the concept of binding, requirements for passing parameters, exception
+                    handling, imperative programming, object-oriented programming, functional 
+                    programming, logic programming, 
+                    formal language theory, and a broad survey of programming languages.
+                </p></li>
+                
+                <li><p>
+                    <i>CSCI 4320 Software Engineering</i> : An introduction to software engineering
+                     methodologies addressing each phase in the life cycle of software. Programming 
+                     assignments use modern software engineering tools and languages.
+                </p></li>
+
+                <li><p>
+                    <i>CSCI 3211 Assem Lang & Digital Design</i> : An introduction to software engineering
+                     methodologies addressing each phase in the life cycle of software. Programming 
+                     assignments use modern software engineering tools and languages.
+                </p></li>
+            </ul>
+            
+            
+
+            </div>
+        </section>
+
+        <script>
+                const header = document.getElementById('header');
+                const content = document.getElementById('content');
+        
+                document.addEventListener('scroll', function (event) 
+                {
+                    const scrollY = window.scrollY;
+                    const headerBottom = header.getBoundingClientRect().bottom;
+        
+                    if (scrollY <= headerBottom + 15) 
+                    {
+                        header.classList.remove('hidden');
+                    } else 
+                    {
+                        header.classList.add('hidden');
+                    }
+                });
+        </script>
+        
+    </body>
+
+   <style>
+        
+        html, body 
+        {
+            padding: 0%;
+            margin: 0%;
+            height: 100%;
+        }
+
+        body
+        {
+          
+            
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        body::before 
+        {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: url("/assets/sd_image.png") center / cover no-repeat;
+            opacity: 0.25; 
+            pointer-events: none;
+            z-index: -1;
+        }
+
+
+       li p
+        {
+           
+            line-height: 2rem;
+            font-size: 2.1rem;
+            margin-top: 2rem;
+        }
+        
+
+        header
+        {
+            justify-content: left;
+            transition: opacity 0.5s ease-in-out;
+        }
+         
+        header.hidden 
+        {
+            opacity: 0;
+        }
+
+        header nav
+        {
+            position: relative;
+            right: 80px ;
+            font-size: 2.5rem;
+        }
+
+        header nav a
+        {
+            color: skyblue;
+        }
+
+        i
+        {
+            color:skyblue;
+        }
+        
+        .pageTag
+        {
+            margin-right: 1.5rem;
+        }
+        
+    </style> 
+
+</html>

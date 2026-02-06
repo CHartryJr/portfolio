@@ -1,29 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="\styles/styles.css">
-    <title>ML Exper</title>
-</head>
-<body>
-    <header class="header" id="header">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="\styles/styles.css">
+        <link rel="icon" href="\assets/Heartrylogo.jpeg" class="logo">
+        <title>Experince</title>
+    </head>
+
+    <body>
+
+        <header class="header" id="header">
             <a href="#" class="pageTag"> Carl <span>Hartry Jr.</span></a>
             <nav class="navi">
-                <a href="\index.html#about" class ="active">Home</a>
+                <a href="\index.html#experience" class ="active">Home</a>
             </nav>
-    </header>
+        </header>
 
-    <section class = "ml_detail">
-        <h1 class = "heading"><span> Machine Learning</span> Experince</h1>
-        <div id="sub_content">
-           <p>
-                
-           </p> 
+        <section class = "ml_detail">
+            <h1 class = "heading"><span> Machine Learning</span> Experince</h1>
+            <div id="exp-content">
+            
+            <ul id = 'class_content' style="list-style-type: none;">
+
+                <li><p> 
+                    <i>CSCI 4820 Artifical Intelligence</i> : This course explores the theoretical and practical
+                    underpinnings of artificial intelligence and provides an introductory-level
+                    hands-on, engineering-oriented perspective on AI technology.
+                </p></li>
+
+                <li><p>
+                    <i>CSCI 3711 Data analysis</i> : This course explores various software packages frequently
+                    used for data analysis. Examples of software packages include numpy, scipy, pandas, 
+                    scikit-learn, matplotlib, etc. Through rigorous practice, students 
+                    will be expected to master state-of-the-art data analysis and visualization techniques.
+                </p></li>
+
+                <li><p>
+                    <i>CSCI 3710 Data Mininig </i> : An introduction to data mining concepts 
+                    and algorithms applying algorithms in real-world cases.
+                </p></li>
+
+            </ul>
+            
+            </div>
+        </section>
+
+        <script>
+                const header = document.getElementById('header');
+                const content = document.getElementById('content');
         
+                document.addEventListener('scroll', function (event) 
+                {
+                    const scrollY = window.scrollY;
+                    const headerBottom = header.getBoundingClientRect().bottom;
+        
+                    if (scrollY <= headerBottom + 15) 
+                    {
+                        header.classList.remove('hidden');
+                    } else 
+                    {
+                        header.classList.add('hidden');
+                    }
+                });
+        </script>
+        
+    </body>
 
-        </div>
-    </section>
-</body>
-<footer></footer>
+   <style>
+        html, body 
+        {
+            padding: 0%;
+            margin: 0%;
+            height: 100%;
+        }
+
+        body
+        {
+          
+            
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        body::before 
+        {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: url("/assets/ml_image.png") center / cover no-repeat;
+            opacity: 0.25; 
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        
+       li p
+        {
+            
+            line-height: 2.5rem;
+            font-size: 2.1rem;
+            margin-top: 2rem;
+        }
+        
+        header
+        {
+            justify-content: left;
+            transition: opacity 0.5s ease-in-out;
+        }
+         
+        header.hidden 
+        {
+            opacity: 0;
+        }
+
+        header nav
+        {
+            position: relative;
+            right: 80px ;
+            font-size: 2.5rem;
+        }
+
+        header nav a
+        {
+            color: skyblue;
+        }
+
+        i 
+        {
+            color: skyblue;
+        }
+        
+        .pageTag
+        {
+            margin-right: 1.5rem;
+        }
+
+    </style> 
+
 </html>

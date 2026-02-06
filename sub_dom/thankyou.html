@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <!-- Redirect after 10 seconds -->
+    <meta http-equiv="refresh" content="10;url=\index.html#about">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 500px;
+            padding: 30px;
+            border-radius: 10px;
+            background: #ffffff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        p {
+            margin: 20px 0;
+        }
+        .countdown {
+            font-weight: bold;
+            color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thank You!</h1>
+        <p>I appreciate your submission. You will be redirected shortly.</p>
+        <p>Redirecting in <span class="countdown">10</span> seconds...</p>
+    </div>
+
+    <script>
+        // Countdown timer
+        let seconds = 10;
+        const countdownEl = document.querySelector('.countdown');
+
+        const interval = setInterval(() => {
+            seconds--;
+            countdownEl.textContent = seconds;
+            if (seconds <= 0) {
+                clearInterval(interval);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
